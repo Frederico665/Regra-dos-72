@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regra dos 72</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Regra dos 72</h1>
+      <nav>
+        <ul>
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#exemplo">Exemplo</a></li>
+          <li><a href="#calcule">Calcule</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <main>
+    
+    <section id="introducao" class="section">
+      <h2>O que é a Regra dos 72?</h2>
+      <p >A Regra dos 72 é uma fórmula matemática simples, usada no mundo das finanças para estimar em quanto tempo um investimento dobrará de valor, com base em uma taxa de juros composta fixa. 
+        <br>Embora ela pareça uma técnica moderna, sua origem remonta a séculos atrás.
+        Acredita-se que essa regra tenha surgido na Idade Média, derivada de observações feitas por matemáticos e comerciantes europeus que já trabalhavam com juros compostos de forma empírica. 
+        <br>Um dos primeiros registros históricos dessa ideia aparece nos escritos de Luca Pacioli, um frade e matemático italiano do século XV, conhecido como o "pai da contabilidade". 
+        <br>Em sua obra Summa de Arithmetica (1494), ele discute conceitos ligados a juros e crescimento exponencial, embora sem apresentar a fórmula exata como conhecemos hoje.
+        <br>A Regra dos 72 ganhou destaque posteriormente graças à sua praticidade e precisão aproximada para taxas de juros moderadas (entre 6% e 10%). 
+        
+        A razão pela qual o número 72 funciona tão bem tem base matemática: ele deriva da fórmula dos juros compostos e da aproximação do logaritmo natural de 2 (ln 2 ≈ 0,693), que representa a duplicação de um valor. 
+        Multiplicando esse logaritmo por 100 (para converter a taxa em porcentagem), chega-se a aproximadamente 69,3, mas 72 foi escolhido por ser um número com muitos divisores (2, 3, 4, 6, 8, 9, 12...), o que facilita cálculos mentais rápidos.</p>
+    </section>
+
+    <section id="como-funciona" class="section">
+      <h2>Como Funciona?</h2>
+      <p>Você pode calcular em quanto tempo seu dinheiro dobrará dividindo 72 pela taxa de juros anual (em %).</p>
+      <p><strong>Exemplo:</strong> Se a taxa for 6%, o cálculo é: 72 ÷ 6 = 12 anos.</p>
+    </section>
+    
+    <section id="exemplo" class="section">
+      <h2>Exemplo Prático</h2>
+      <p>Se a taxa de juros for 9%, seu investimento dobrará em:</p>
+      <p><strong>72 ÷ 9 = 8 anos</strong></p>
+    </section>
+
+    <section id="calcule" class="section">
+      <h2>Calcule Seu Investimento</h2>
+      <form id="form-calculo">
+        <label for="taxa">Informe a taxa de juros anual (%):</label>
+        <input type="number" id="taxa" name="taxa" required placeholder="Ex: 6">
+        <button type="submit">Calcular</button>
+      </form>
+      <p id="resultado"></p>
+    </section>
+  </main>
+
+
+  <footer>
+   
+  </footer>
+
+  <script src="./src/scripts/script.js"></script>
+</body>
+</html>
